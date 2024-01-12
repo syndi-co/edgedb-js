@@ -109,13 +109,7 @@ interface RenderCtx {
   linkProps: Map<SomeExpression, string[]>;
 }
 
-const toEdgeQLCache = new WeakMap<any, string>();
-
 export function $toEdgeQL(this: any) {
-  if (toEdgeQLCache.has(this)) {
-    return toEdgeQLCache.get(this)!;
-  }
-
   const walkExprCtx: WalkExprTreeCtx = {
     seen: new Map(),
     rootScope: null,
@@ -331,7 +325,6 @@ export function $toEdgeQL(this: any) {
   ) {
     edgeQL = edgeQL.slice(1, -1);
   }
-  toEdgeQLCache.set(this, edgeQL);
 
   return edgeQL;
 }
