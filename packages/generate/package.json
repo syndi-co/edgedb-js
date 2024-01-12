@@ -37,7 +37,7 @@
   "dependencies": {},
   "scripts": {
     "play": "tsx playground.ts",
-    "preinstall": "npm run build",
+    "preinstall": "npm run build:fast",
     "build": "rimraf dist && yarn build:cjs && yarn build:esm && yarn build:deno && chmod +x dist/cli.js && yarn syntax:make && yarn syntax:clean && tsx embedVersion.ts dist/genutil.js",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.esm.json",
