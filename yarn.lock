@@ -3742,6 +3742,11 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+preinstall@0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/preinstall/-/preinstall-0.0.1-security.tgz#945fc2dc8748de45cf16fd339d06d8b0ce785afb"
+  integrity sha512-MHGMEJ8hsDt087lVdRDK9gMRcL23qfdIiNQkWMvuOjZF0kYkYAsuANmg082+4C2HkU3ufo/tAf7MOI36RiD/gw==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
