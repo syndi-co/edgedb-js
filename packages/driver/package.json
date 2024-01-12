@@ -34,10 +34,11 @@
     "jest-environment-jsdom": "^29.5.0",
     "ts-jest": "29.1.0",
     "tsx": "^3.12.7",
+    "rimraf": "^3.0.2",
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "build": "echo 'Building edgedb-js...' && rm -rf dist && yarn build:cjs && yarn build:deno",
+    "build": "echo 'Building edgedb-js...' && rimraf dist && yarn build:cjs && yarn build:deno",
     "build:cjs": "tsc --project tsconfig.json",
     "build:deno": "deno run --unstable --allow-all ./buildDeno.ts",
     "test": "npx --node-options='--experimental-fetch' jest --detectOpenHandles",

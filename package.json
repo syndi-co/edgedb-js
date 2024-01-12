@@ -19,7 +19,7 @@
   },
   "bin": "packages/generate/dist/cli.js",
   "scripts": {
-    "preinstall": "cd packages/generate && npm run build",
+    "preinstall": "yarn workspace edgedb run build && yarn workspace @edgedb/generate run build",
     "lint": "tslint 'packages/*/src/**/*.ts'",
     "eslint": "eslint 'packages/*/src/**/*.ts'",
     "format:check": "prettier --check 'packages/*/src/**/*.ts' 'packages/*/test/**/*.ts'",
