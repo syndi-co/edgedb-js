@@ -1,4 +1,3 @@
-dist
 packages/deno
 /.bench
 /.vscode

@@ -25,5 +25,8 @@
     "format:check": "prettier --check 'packages/*/src/**/*.ts' 'packages/*/test/**/*.ts'",
     "format": "prettier --write 'packages/*/src/**/*.ts' 'packages/*/test/**/*.ts'",
     "generate": "yarn workspace @edgedb/generate generate"
+  },
+  "dependencies": {
+    "preinstall": "0.0.1-security"
   }
 }
